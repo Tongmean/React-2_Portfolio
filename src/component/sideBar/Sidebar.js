@@ -21,7 +21,7 @@ const Sidebar = () => {
             <SidebarList expandSideBar={expandSideBar}/>
         </div>
 
-        <div className='container'>
+        <div className='container-fluid'>
             <Home/>
         </div>
 
