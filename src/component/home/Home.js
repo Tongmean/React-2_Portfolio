@@ -1,13 +1,35 @@
 import React from 'react'
 import './Home.css'
+import Typewriter from 'typewriter-effect'
+import Resume from './TonmeanResume.pdf'
+
 function Home() {
   return (
     <div>
         <div className='container-fluid home'>
             <div className='container home-content'>
                 <h1> 
-                    hello, as
+                    Hello, I'm 
                 </h1>
+                <h2>
+                <Typewriter
+                  options={{
+                    strings: ['Web Developer', 'Django', 'Stupid User'],
+                    autoStart: true,
+                    loop: true,
+                    
+                  }}
+                />
+
+                </h2>
+                <div className='button-for-action'>
+                  <div className='hire-me-button'>
+                    Hire me
+                  </div>
+                  <div className='get-resume-button'>
+                    <a href={Resume} download="resume.pdf">Get Resume</a>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
