@@ -54,7 +54,7 @@ const Techstack = () => {
       <div className='row'>
         {data.slice(0, showMoreTech).map((item,index) => (
           <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12' key={index}>
-            <div className='tech-content'>
+            <div className={index === 0 ? 'tech-content-mark tech-content':'tech-content'}>
               <span className='tech-num' style={{backgroundColor:color[index]}}>{index + 1}</span>
               <p>
                 {item.name}
@@ -63,10 +63,11 @@ const Techstack = () => {
           </div>
         ))}
       </div>
-      <div className='load-mor-tech' onClick={loadMore}>
-        load more
-
-      </div>
+      {showMoreTech >= data.length ? (null):(
+        <div className='load-mor-tech' onClick={loadMore}>
+          load more
+        </div>
+      )}
 
     </div>
   )
