@@ -10,8 +10,8 @@ const Projectlist = ({name, desc, Projectlink, techuse}) => {
     };
 
     return (
-    <div className='project-list' onClick={handleShow}>
-        <div className='title-and-collapse-option' onClick={handleShow}>
+    <div className='project-list' onClick={handleShow} onMouseEnter ={()=>setShow(false)} onMouseLeave = {()=>setShow(true)}>
+        <div className='title-and-collapse-option'>
         <h3>{name}</h3>
             <p>
                 {Show ? (<FcExpand size={20}/>):(<FcCollapse size={20}/>)}
