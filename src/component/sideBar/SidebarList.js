@@ -1,6 +1,6 @@
 import React from 'react'
 import './SidebarList.css'
-import Profile from '../Image/pic.jfif'
+import Profile from '../Image/Profile.jpg'
 import { MdBiotech } from "react-icons/md";
 
 import { FcHome, FcContacts, FcNightPortrait, FcSalesPerformance, FcTodoList, FcFactory } from "react-icons/fc";

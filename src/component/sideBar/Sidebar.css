@@ -1,6 +1,7 @@
 .sidebar-section {
     display: flex;
-    /* background-color: #000; */
+    background-color: #000;
+
 }
 .sidebar {
     width: 95px;

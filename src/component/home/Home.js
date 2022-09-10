@@ -14,9 +14,10 @@ function Home() {
                 <h2>
                 <Typewriter
                   options={{
-                    strings: ['Web Developer', 'Django', 'Stupid User'],
+                    strings: ['Silpakorn University', 'ECS'],
                     autoStart: true,
                     loop: true,
+                    delay:5,
                     
                   }}
                 />
