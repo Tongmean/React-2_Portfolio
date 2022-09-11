@@ -1,0 +1,41 @@
+.testimonial-section {
+    margin-top: 30px;
+}
+
+.testimonial-title h2 {
+    text-align: center;
+}
+.line-testimonial {
+    display: flex;
+    width: 200px;
+    height: 3px;
+    justify-content: center;
+    background-color: aquamarine;
+    margin: auto ;
+}
+.content-slider{
+    margin-top: 40px;
+
+}
+.slider-detail {
+    padding:10px;
+    margin-top: 50px;
+    margin: 10px;
+    color: white;
+    background-color: violet;
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.slider-pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 90px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+
+}

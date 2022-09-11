@@ -5,6 +5,7 @@ import Techstack from './component/Tech-stack/Techstack';
 import Project from './component/project/Project';
 import WorkExperience from './component/workExerience/WorkExperience';
 import Education from './component/education/Education';
+import Testimonial from './component/testimonial/Testimonial';
 function App() {
   return (
     <div >
@@ -14,7 +15,8 @@ function App() {
       <Project/>
       <WorkExperience/>
       <Education/>
-      
+      <Testimonial/>
+
     </div>
   );
 }
