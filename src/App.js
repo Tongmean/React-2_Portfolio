@@ -4,6 +4,7 @@ import About from './component/about/About';
 import Techstack from './component/Tech-stack/Techstack';
 import Project from './component/project/Project';
 import WorkExperience from './component/workExerience/WorkExperience';
+import Education from './component/education/Education';
 function App() {
   return (
     <div >
@@ -12,6 +13,8 @@ function App() {
       <Techstack/>
       <Project/>
       <WorkExperience/>
+      <Education/>
+      
     </div>
   );
 }
