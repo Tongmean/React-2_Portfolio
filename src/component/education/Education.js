@@ -40,15 +40,16 @@ export const Education = () => {
     ]
 
   return (
-    <div className='container education-section'>
+    <div className='container education-section' id='education'>
         <div className='Education-title'>
             <h2>Education</h2>
             <span className='line-EDUCATION'></span>
         </div>
         <div className='Education-content '>
-            <VerticalTimeline lineColor='darkblue'>
+            <VerticalTimeline lineColor='darkblue' >
                 {data.map((item,index)=>(
                     <VerticalTimelineElement
+                    key = {index}
                     className="vertical-timeline-element--work"
                     contentStyle={{ background:color[index], color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}

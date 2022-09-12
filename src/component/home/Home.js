@@ -6,7 +6,7 @@ import Resume from './TonmeanResume.pdf'
 function Home() {
   return (
     <div>
-        <div className='container-fluid home'>
+        <div className='container-fluid home' id='home'>
             <div className='container home-content'>
                 <h1> 
                     Hello, I'm 

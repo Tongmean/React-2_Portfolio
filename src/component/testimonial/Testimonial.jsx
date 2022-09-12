@@ -67,7 +67,7 @@ const Testimonial = () => {
 
   ]
   return (
-    <div className='container testimonial-section'>
+    <div className='container testimonial-section' id='testimonial'>
         <div className='testimonial-title'>
             <h2>Testimonial</h2>
             <span className='line-testimonial'></span>

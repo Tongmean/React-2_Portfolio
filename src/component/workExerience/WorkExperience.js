@@ -110,7 +110,7 @@ const WorkExperience = () => {
         <FcAcceptDatabase/>,
     ]
     return (
-        <div className='container workExperience'>
+        <div className='container workExperience' id='experience'>
             <div className='WorkExperience-title'>
                 <h2>
                     Work Experience
@@ -130,6 +130,7 @@ const WorkExperience = () => {
                     date="2011 - present"
                     iconStyle={{ background:color[index], color: '#fff' }}
                     icon={icon[index]}
+                    key={index}
                     >
                     <h3 className="vertical-timeline-element-title">{item.name}</h3>
                     <h4 className="vertical-timeline-element-subtitle">{item.position}</h4>

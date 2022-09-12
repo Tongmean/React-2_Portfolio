@@ -42,8 +42,9 @@ label{
 }
 .btn{
     margin-top: 20px;
-    background-color: darkcyan;
+    background-color: #030303da;
     width: 25%;
+    color:white ;
     height: 50px;
     
 }
@@ -53,4 +54,5 @@ label{
     color: black;
     width: 35%;
     outline: grey;
+    transition-duration: 1s;
 }
