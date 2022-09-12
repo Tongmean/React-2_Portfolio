@@ -8,7 +8,7 @@ const Testimonial = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -54,6 +54,16 @@ const Testimonial = () => {
       desc:"I love ypu too much",
       pic:"https://images.pexels.com/photos/38440/night-view-goguryeo-jung-achasan-republic-of-korea-38440.jpeg?cs=srgb&dl=pexels-pixabay-38440.jpg&fm=jpg",
     },
+    {
+      name:"Tong",
+      desc:"I love ypu too much",
+      pic:"https://images.pexels.com/photos/38440/night-view-goguryeo-jung-achasan-republic-of-korea-38440.jpeg?cs=srgb&dl=pexels-pixabay-38440.jpg&fm=jpg",
+    },
+    {
+      name:"Tong",
+      desc:"I love ypu too much",
+      pic:"https://images.pexels.com/photos/38440/night-view-goguryeo-jung-achasan-republic-of-korea-38440.jpeg?cs=srgb&dl=pexels-pixabay-38440.jpg&fm=jpg",
+    },
 
   ]
   return (
@@ -62,17 +72,20 @@ const Testimonial = () => {
             <h2>Testimonial</h2>
             <span className='line-testimonial'></span>
         </div>
-        <div className='content-slider'>
-          <Slider {...settings}>
-            {data.map((i, index)=>(
-              <div className='slider-detail' key={index}>
-                <img src={i.pic} alt="pic" className="slider-pic" />
-                <p>{i.name}</p>
-                <p>{i.desc}</p>
-              </div>
-            ))}
-          </Slider>
+        <div>
+          <div className='content-slider'>
+            <Slider {...settings}>
+              {data.map((i, index)=>(
+                <div className='slider-detail' key={index}>
+                  <img src={i.pic} alt="pic" className="slider-pic" />
+                  <p>{i.name}</p>
+                  <p>{i.desc}</p>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
+        
 
     </div>
   )

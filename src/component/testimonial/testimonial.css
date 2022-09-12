@@ -15,6 +15,7 @@
 }
 .content-slider{
     margin-top: 40px;
+    
 
 }
 .slider-detail {
@@ -26,6 +27,9 @@
     cursor: pointer;
     margin-bottom: 30px;
     text-align: center;
+    height: 200px;
+    border: 15px solid white;
+    border-radius: 20px;
 }
 .slider-pic{
     height: 80px;
@@ -37,5 +41,21 @@
     margin-top: -20px;
     justify-content: center;
     align-items: center;
+    border:2px solid darkblue;
 
+
+}
+.slider-detail:hover {
+    background-color: aliceblue;
+    transition-duration: 1s;
+    cursor: pointer;
+    padding: 10px;
+}
+.slick-prev:before{
+    color: blue !important;
+    font-size: 30px;
+}
+.slick-next:before {
+    color:blue !important;
+    font-size: 30px;
 }
