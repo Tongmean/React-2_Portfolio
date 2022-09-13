@@ -15,11 +15,11 @@ const Navbarmobile = () => {
     <div className='navbar-mobile'>
         <div className='Navbar-mobie-header' onClick={handleShow}>
             <p>
-                <GiHamburgerMenu size={24}/>
+                <GiHamburgerMenu size={26}/>
             </p>
         </div>
         {Show ? (null):(
-            <div className='mobile-nav sidebar-35'>
+            <div className='sidebar-35'>
                 <ul>
                     <li className='nav-items-mobile'>
                         <Link to="home">

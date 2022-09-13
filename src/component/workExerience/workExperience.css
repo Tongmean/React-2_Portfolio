@@ -1,6 +1,9 @@
 .workExperience{
     margin-top: 30px;
 }
+#dark .workExperience{
+    color: white;
+}
 .WorkExperience-title {
     display: flex;
     justify-content: center;

@@ -1,6 +1,8 @@
 import React from 'react'
 import './techstack.css'
 import { useState } from 'react'
+import Flip from 'react-reveal/Flip';
+import Slide from 'react-reveal/Slide';
 const Techstack = () => {
 
   const data = [
@@ -47,10 +49,13 @@ const Techstack = () => {
 
   return (
     <div className='container tech-stack' id='tech-stack'>
+      <Flip top>
       <div className='tech-stack-title'>
         <h2>Tech Stack</h2>
         <span className='line-tech-stack'></span>
       </div>
+      </Flip>
+      <Slide bottom>
       <div className='row'>
         {data.slice(0, showMoreTech).map((item,index) => (
           <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12' key={index}>
@@ -63,12 +68,14 @@ const Techstack = () => {
           </div>
         ))}
       </div>
-      {showMoreTech >= data.length ? (null):(
-        <div className='load-mor-tech' onClick={loadMore}>
-          load more
-        </div>
-      )}
-
+      </Slide>
+      <Slide right>
+        {showMoreTech >= data.length ? (null):(
+          <div className='load-mor-tech' onClick={loadMore}>
+            load more
+          </div>
+        )}
+      </Slide>
     </div>
   )
 }

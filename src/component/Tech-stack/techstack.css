@@ -1,8 +1,10 @@
 .tech-stack{
     margin-top: 40px;
     margin-bottom: 40px;
-    /* display: flex;
-    justify-content: center; */
+
+}
+#dark .tech-stack {
+    color:white;
 }
 .line-tech-stack {
     display: block;
@@ -24,12 +26,19 @@
     box-shadow: 0 0 10px 5px;
 
 }
+#dark .tech-content{
+    background-color: darkblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .tech-content:hover {
     background-color: violet;
     cursor: pointer;
 }
 .tech-content-mark {
     background-color: orangered;
+}
+#dark .tech-content-mark{
+    background-color: rgb(206, 133, 23);
 }
 .tech-content p {
     text-align: center;

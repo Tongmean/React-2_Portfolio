@@ -2,11 +2,20 @@ import React from 'react'
 import './Home.css'
 import Typewriter from 'typewriter-effect'
 import Resume from './TonmeanResume.pdf'
-
-function Home() {
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import Fade from 'react-reveal/Fade';
+function Home({theme, changeTheme}) {
   return (
     <div>
         <div className='container-fluid home' id='home'>
+
+          <Fade bottom>
+            <div className='theme-change' onClick={changeTheme}>
+                
+                {theme ==="light" ? (<p><BsFillMoonStarsFill size={25}/></p>):(<p className='sun-theme-icon'>< BsFillSunFill size={25} /></p>)}
+              
+            </div>
+
             <div className='container home-content'>
                 <h1> 
                     Hello, I'm 
@@ -32,6 +41,7 @@ function Home() {
                   </div>
                 </div>
             </div>
+          </Fade>
         </div>
     </div>
   )

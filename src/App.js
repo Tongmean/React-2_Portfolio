@@ -9,18 +9,33 @@ import Testimonial from './component/testimonial/Testimonial';
 import Contact from './component/contact/Contact';
 import ScrollToTop from "react-scroll-to-top";
 import Navbarmobile from './component/sideBar/Navbarmobile';
-function App() {
+import { createContext, useState} from 'react';
+
+export const ThemeContext = createContext(null);
+
+
+const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  const changeTheme = () => {
+    setTheme((prev) => (prev === "light" ? ("dark"):("light")));
+  }
+
+
   return (
-    <div >
-      <Navbarmobile/>
-      <Sidebar/>
-      <About/>
-      <Techstack/>
-      <Project/>
-      <WorkExperience/>
-      <Education/>
-      <Testimonial/>
-      <Contact/>
+    <ThemeContext.Provider value={{theme, changeTheme}} >
+      <div id = {theme}>
+        <Navbarmobile/>
+        <Sidebar theme={theme} changeTheme={changeTheme} />
+        <About/>
+        <Techstack/>
+        <Project/>
+        <WorkExperience/>
+        <Education/>
+        <Testimonial/>
+        <Contact/>
+      </div>
+
 
       <ScrollToTop
         smooth = {true}
@@ -30,7 +45,7 @@ function App() {
         top='25'
         style={{borderRadius:"90px", backgroundColor:'#white'}}
       />
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

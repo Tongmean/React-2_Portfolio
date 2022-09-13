@@ -1,6 +1,9 @@
 .testimonial-section {
     margin-top: 30px;
 }
+#dark .testimonial-section{
+    color:white;
+}
 
 .testimonial-title h2 {
     text-align: center;
@@ -31,6 +34,10 @@
     height: 200px;
     border: 15px solid white;
     border-radius: 20px;
+}
+#dark .slider-detail{
+    background-color: darkblue;
+    border: 15px solid blueviolet;
 }
 .slider-pic{
     height: 80px;
